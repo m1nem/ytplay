@@ -46,7 +46,7 @@ A fast, cross-platform CLI tool to **search YouTube** and stream or download vid
 ### Linux / macOS
 
 ```bash
-git clone https://github.com/you/ytplay
+git clone https://github.com/m1nem/ytplay
 cd ytplay
 make
 ```
