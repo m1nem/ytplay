@@ -1,0 +1,15 @@
+# ytplay — Windows NMake file
+# Usage: nmake -f Makefile.win
+
+CC     = cl
+CFLAGS = /O2 /W3 /nologo
+TARGET = ytplay.exe
+SRC    = ytplay.c
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) /Fe:$(TARGET)
+
+clean:
+	del /Q $(TARGET) *.obj 2>NUL
